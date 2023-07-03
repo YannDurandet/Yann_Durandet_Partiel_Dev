@@ -1,0 +1,297 @@
+/* =============== Main =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    transition: all 600ms ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    max-width: 300px;
+}
+/* =============== Main Classes =============== */
+
+.click {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 245px;
+}
+
+/* =============== Nav =============== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 245px;
+    height: 100%;
+    background-color: #808080;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbarImage {
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.navbarImage img {
+    width: 100%;
+    height: auto;
+}
+
+.navbarLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navbarLinks li {
+    margin-bottom: 12px;
+}
+
+.navbarLinks li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbarSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding-top: 12px;
+    padding-left: 12px;
+    border-left: 2px solid rgb(81, 81, 81);
+}
+
+.navSocialIcon {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 8.5px 11px;
+    border-radius: 32px;
+    margin-bottom: 12px;
+}
+
+.navSocialIcon:hover {
+    background-color: #252525;
+    color: #f0f0f0;
+}
+
+.navbarFooter {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(140, 140, 140);
+}
+
+
+/* =============== Landing Page =============== */
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;;
+    margin: 0 auto;
+}
+
+.title {
+    padding-top: 16px;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 96px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 32px;
+}
+
+#article,
+#article2,
+#article3 {
+    display: none;
+}
+
+/* =============== ARTICLES =============== */
+
+.articleItem {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border: 1px solid #4F4F4F;
+}
+
+.articleLeftColumn {
+    width: 50%;
+}
+
+.articleRightColumn {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.articleImage {
+    max-width: 300px;
+    height: auto;
+    width: auto;
+    margin-bottom: -5px;
+}
+
+.articleBox {
+    background-color: #000;
+    padding: 14px 20px 14px 24px;
+    width: fit-content;
+    display: inline-block;
+    z-index: 2;
+}
+
+.articleLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.articleLinkText {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.articleBox:hover {
+    background-color: #252525;
+}
+
+.articleBox:hover .articleLink {
+    color: rgba(255, 177, 71, 1);
+}
+
+/* =============== Footer =============== */
+
+footer {
+    padding: 40px 0 40px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #909090;
+}
+
+.footerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footerLogoImg {
+    width: 240px;
+}
+
+.footerSocialList {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+}
+
+.footerSocialLink {
+    color: #f5f5f5;
+    margin-right: 24px;
+    font-weight: 600;
+}
+
+.footerSocialLink:hover {
+    color: rgba(255, 177, 71, 1);
+}
+
+.footerCopyright {
+    color: #505050;
+    padding-bottom: 20px;
+}
+
+/* =============== Link Hover Effect =============== */
+
+/* == General == */
+
+.linkHoverEffect {
+    position: relative;
+}
+
+.linkHoverEffect:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+
+.linkHoverEffect:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+/* == Variants == */
+
+.linkHoverEffectColorCover:after {
+    z-index: -1;
+    background-image: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
+    height: 20px;
+    bottom: 2px;
+    left: -20px;
+}
+
+/* === DARK THEME === */
+.darkTheme .landing{
+    background-color: #333333;
+}
+
+.darkTheme footer{
+    background-color: #252525;
+}
+.darkTheme .navbar{
+    background-color: #000;
+}
+
+.darkTheme p,
+.darkTheme h2,
+.darkTheme span,
+.darkTheme h1 {
+    color: #f5f5f5;
+}

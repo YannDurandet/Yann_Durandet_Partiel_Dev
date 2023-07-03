@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Partiel</title>
+    <link rel="shortcut icon" href="assets/InitialsIcon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ceci n'est absolument pas la même navbar utilisée pour mon site portfolio, vous faite une hallucination. -->
+    <div class="navbar">
+        <nav>
+            <div class="navbarImage">
+                <img src="assets/InitialsIcon.svg" alt="Logo" />
+            </div>
+            <ul class="navbarLinks">
+                <li>
+                    <a href="#" class="linkHoverEffect linkHoverEffectColorCover">Accueil</a>
+                </li>
+                <li>
+                    <a href="#Article1" class="linkHoverEffect linkHoverEffectColorCover">Drake est pas ouf</a>
+                </li>
+                <li>
+                    <a href="#Article2" class="linkHoverEffect linkHoverEffectColorCover">l'histoire du granite</a>
+                </li>
+                <li>
+                    <a href="#Article3" class="linkHoverEffect linkHoverEffectColorCover">La Supra est une BMW</a>
+                </li>
+            </ul>
+            <div class="navbarSocial">
+                <a onclick="toggleContrast()"><i class="fa-solid fa-moon navSocialIcon"></i></a>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="landing">
+            <h1 class="title">Un Blog Incroyable</h1>
+            <h2 class="subtitle">Vous allez découvrir des articles hyper intéressants</h2>
+            <span>Pour des raisons inconnues veuillez appuyer 2 fois sur les boutons pour lire les articles</span>
+            <section id="Article1">
+                <div class="articleItem">
+                    <div class="articleLeftColumn">
+                        <img src="assets/drake.png" alt="Illustrations variées" class="articleImage">
+                    </div>
+                    <div class="articleRightColumn">
+                        <h2> Pourquoi Drake est pas ouf ? </h2>
+                        <div class="articleBox click" id="toggleButton">
+                            <a class="articleLink">
+                                <span class="articleLinkText">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div id="articleHolder">
+                            <p id="article">Il est nul, dans tout les domaines de l'art humain. Il a fait un "recueil" de poésie c'est des blagues corny à deux balles tellement honteuse que même si je les avait sorti en Français en 6ème j'aurai eu honte sur 8 générations. Il a aucun talent, ne sais pas chanter, n'a aucun goût, en 3è ma prof de musique nous as demandé de comparer une chanson de drake à une chanson de Jean Jacques Goldman le niveau de comparaison était du niveau de "Les 2 chanteurs sont des hommes" tellement il n'y avait rien avoir entre ces 2 là.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Article2">
+                <div class="articleItem">
+                    <div class="articleLeftColumn">
+                        <img src="assets/GRANITE.jpg" alt="Illustrations variées" class="articleImage">
+                    </div>
+                    <div class="articleRightColumn">
+                        <h2> L'histoire du granite updated </h2>
+                        <div class="articleBox click" id="toggleButton2">
+                            <a class="articleLink">
+                                <span class="articleLinkText">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div id="articleHolder">
+                            <p id="article2">Rajoutée en 1.8 quand Minecraft n'était pas encore une machine à cash qui rapportait des millions par jour à microsoft, le grantite est un bloc qui se génère en blob sous terre de manière aléatoire. en 1.14 il reçoit unemise à jour de texture comme tout les autres blocks du jeu, ainsi que des variantes en plus comme l'incroyable muret en granite. depuis pas grand chose. Personnelemment, je l'aurait mis en block par défaut dans les souterrains des biomes chauds, Mesa, Jungle & Désert, plutôt que de la pierre de casu, mais bon on fait avec ce que l'on a.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Article3">
+                <div class="articleItem">
+                    <div class="articleLeftColumn">
+                        <img src="assets/supra.jpg" alt="Illustrations variées" class="articleImage">
+                    </div>
+                    <div class="articleRightColumn">
+                        <h2>La meilleure BMW : Supra mk5 </h2>
+                        <div class="articleBox click" id="toggleButton3">
+                            <a class="articleLink">
+                                <span class="articleLinkText">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div id="articleHolder">
+                            <p id="article3">La Toyota Supra mk5 est souvent critiquée comme étant une BMW, parce que ces flemmards de chez toyota toys motors ont eu la flemme de faire leur engin eux-même. Ils ont donc demandé un moteur à BMW, et comme une Toyota à l'inverse d'une BMW est sensé rouler au moins 3000km avant de tomber en panne, ils ont tweak le moteur à mort, pour le rendre plus durable et performant.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footerRow">
+                <a href="#" class="footerAnchor">
+                    <figure class="footerLogo">
+                        <img src="assets/InitialsIcon.svg" class="footerLogoImg" alt="LOGO YD">
+                    </figure>
+                </a>
+                <div class="footerSocialList">
+                    <a href="https://instagram.com/yann_visuals" target="_blank"
+                        class="footerSocialLink">Instagram</a>
+                    <a href="https://github.com/YannDurandet" target="_blank" class="footerSocialLink">GitHub</a>
+                    <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
+                        class="footerSocialLink">LinkedIn</a>
+                </div>
+                <div class="footerCopyright">
+                    Copyright &copy; 2023 MonSiteWeb
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous"></script>
+</html>
